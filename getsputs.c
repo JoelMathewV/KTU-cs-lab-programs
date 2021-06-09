@@ -1,5 +1,4 @@
-//2. Write a program to accept your name, roll number branch and percentage and print it
-
+// An example to see how to use gets() and puts() functions
 #include<stdio.h>
 int main(){
     char name[20];

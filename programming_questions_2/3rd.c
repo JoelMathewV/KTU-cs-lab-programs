@@ -1,12 +1,8 @@
 //3. Write a program to find the sum of digits of a 3 digit number
 #include<stdio.h>
 int main(){
-    int n;
-    int a;
-    int b;
-    int c;
-    int d;
-    int sum;
+    int n,a,b,c,d,sum;
+    printf("enter the 3 digit no. ");
     scanf("%d",&n);
     a = n%10;
     b = n/10;

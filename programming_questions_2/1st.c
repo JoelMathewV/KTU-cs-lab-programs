@@ -1,9 +1,7 @@
 //1. Write a C program to convert given KM to meter and centimeter
 #include<stdio.h>
 int main(){
-    int n;
-    int m;
-    int cm;
+    int n,m,cm;
     printf("input the distance: ");
     scanf("%d", &n);
     m = n*1000;

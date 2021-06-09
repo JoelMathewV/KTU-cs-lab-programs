@@ -2,12 +2,13 @@
 
 #include<stdio.h>
 int main(){
-    char name[20];
-    int roll;
-    char branch[20];
-    int percent;
-    printf("enter ur name, roll no, branch and percentage");
-    scanf("%s%d%s%d",&name,&roll,&branch,&percent);
-    printf("ur name is %s ,ur roll no is %d , ur branch is %s , ur percentage is %d",name,roll,branch,percent);
+    char name[20], branch[20];
+    int roll, percent;
+    printf("enter your name, roll no, branch and percentage ");
+    gets(name);
+    scanf("%d%s%d",&roll,&branch,&percent);
+    printf("your name is ");
+    puts(name);
+    printf("your roll no is %d\nyour branch is %s\nyour percentage is %d",roll,branch,percent);
     return 0;
 }

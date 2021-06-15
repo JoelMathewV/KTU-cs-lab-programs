@@ -1,3 +1,4 @@
+// find the sum of N different numbers
 #include<stdio.h>
 int main(){
     int i,n,sum=0,a;

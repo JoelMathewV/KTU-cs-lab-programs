@@ -1,3 +1,4 @@
+// program to print sum of even numbers from 1 to 100
 #include<stdio.h>
 int main(){
     int i;

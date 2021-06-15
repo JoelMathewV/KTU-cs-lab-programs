@@ -1,4 +1,4 @@
-//6. Find the max number among three numbers using the conditional operator in C.
+// 6. Find the max number among three numbers using the conditional operator in C.
 #include<stdio.h>
 int main(){
     int a,b,c;

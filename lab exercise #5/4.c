@@ -1,0 +1,1 @@
+//find the factorial of a number using for statement

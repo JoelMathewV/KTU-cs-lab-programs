@@ -1,0 +1,1 @@
+//read n numbers and find the biggest and smallest

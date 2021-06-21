@@ -3,8 +3,7 @@
 int main(){
     int a,b,opr;
     printf("enter the two numbers");
-    scanf("%d",&a);
-    scanf("%d",&b);
+    scanf("%d %d",&a, &b);
     printf("enter your choice \n1.add \n2.subtract \n3.multiply \n4.divide \n");
     scanf("%d",&opr);
     switch (opr)

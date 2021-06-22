@@ -1,8 +1,8 @@
 //generate the fibonacci series 0 1 1 2 3 5........
 #include<stdio.h>
 int main(){
-    int n,a,b,c,i=1;
-    printf("enter the no");
+    int n,a,b,c;
+    printf("enter the no ");
     scanf("%d",&n);
     a=0;
     b=1;

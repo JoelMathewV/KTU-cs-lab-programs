@@ -1,3 +1,6 @@
+//5. Write a program to read n integers, store them in an array and search for an element in
+//the array using an algorithm for Linear Search
+
 #include<stdio.h>
 int main(){
     int n,m,i;

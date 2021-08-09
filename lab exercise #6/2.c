@@ -1,0 +1,1 @@
+//2. Write a program to interchange the largest and the smallest number in an array.

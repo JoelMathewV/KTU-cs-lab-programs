@@ -1,0 +1,1 @@
+//3. Write a program to find the second largest number using an array of n numbers.

@@ -1,0 +1,1 @@
+//5. Write a program to copy one string to another string without using string handling function

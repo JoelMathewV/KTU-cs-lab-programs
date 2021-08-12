@@ -1,0 +1,1 @@
+//3. Write a program to accept a string and count the number of vowels present in this string.

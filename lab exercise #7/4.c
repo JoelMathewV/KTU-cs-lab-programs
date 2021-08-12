@@ -1,0 +1,1 @@
+//4. Write a program to determine the given string is palindrome or not.

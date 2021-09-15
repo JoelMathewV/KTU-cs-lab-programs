@@ -1,6 +1,5 @@
 //Write a c program to accept an int, float, char, double and prints their addresses  and its value using pointer
 #include <stdio.h>
-
 int main()
 {
     int n;

@@ -12,8 +12,10 @@ void reverse(char s[], int n){
 }
 int main(){
     int n;
+    printf("enter the no. of characters in the string ");
     scanf("%d", &n);
     char s[n];
+    printf("enter the string of %d characters ",n);
     scanf(" %s", s);
     reverse(s, n);
     return 0;

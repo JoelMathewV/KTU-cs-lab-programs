@@ -3,13 +3,14 @@
 //address of a person using a variable of the union.
 #include<stdio.h>
 #include<string.h>
+#define C_SIZE 20
 int main(){
     union person
     {
-        char name[10];
-        char House_name[10];
-        char city[10];
-        char state[10];
+        char name[C_SIZE];
+        char House_name[C_SIZE];
+        char city[C_SIZE];
+        char state[C_SIZE];
         int pincode;
     } a;
     printf("enter the address of the person ");

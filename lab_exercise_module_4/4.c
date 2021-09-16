@@ -1,6 +1,6 @@
 //Using structure, read and print data of n employees (Name, Employee Id and Salary)
 #include<stdio.h>
-
+#include<string.h>
 int main(){
     struct employee{
         char Name[10];

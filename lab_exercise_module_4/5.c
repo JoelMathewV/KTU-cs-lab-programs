@@ -2,6 +2,7 @@
 //length of C_SIZE (user defined constant). Then, read and display the
 //address of a person using a variable of the union.
 #include<stdio.h>
+#include<string.h>
 int main(){
     union person
     {

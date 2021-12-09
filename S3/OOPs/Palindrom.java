@@ -1,4 +1,3 @@
-//package S3.OOPs;
 import java.io.*;
 import java.util.*;
 class Palindrom{
@@ -6,7 +5,7 @@ class Palindrom{
         Scanner sc = new Scanner(System.in);
         int flag = 0;
         String s = sc.nextLine();
-        for(int i=0;i<s.length();i++){
+        for(int i=0;i<s.length()/2;i++){
             if(s.charAt(i) == s.charAt(s.length()-1-i)){
                 flag = 1;
             }

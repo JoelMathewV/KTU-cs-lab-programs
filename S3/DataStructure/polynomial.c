@@ -1,33 +1,26 @@
 #include<stdio.h>
-int main(){
-    int i,j,k,n,m;
-    printf("enter the no of elements in x1 ");
-    scanf("%d", &n);
-    printf("enter the no of elements in x2 ");
-    scanf("%d", &m);
-
-    struct polynomial
+struct polynomial
     {
         int coeff;
         int expo;
-    }x1[n], x2[m],x3[n+m];
+    }x1[15], x2[15],x3[30];
 
-    //inputing x1
-    printf("enter the elements of x1 ");
-    for(i=0;i<n;i++){
-        scanf("%d %d", &x1[i].coeff, &x1[i].expo);
+int input(struct polynomial a[]){
+    int terms, i;
+    printf("\nNumber of terms: ");
+    scanf("%d", &terms);
+    printf("\nEnter the coeffecients and exponents in DESCENDING order");
+    for(i = 0 ; i<terms; i++)
+    {
+        printf("\nCoeffecient :");
+        scanf("%d", &a[i].coeff);
+        printf("Exponent :");
+        scanf("%d", &a[i].expo);
     }
-
-    //inputing x2
-    printf("enter the elements of x2 ");
-    for(i=0;i<m;i++){
-        scanf("%d %d", &x2[i].coeff, &x2[i].expo);
-    }
-    
-    //adding x1 and x2
-    i=0;
-    j=0;
-    k=0;
+    return terms;
+}
+int calculation(int n, int m){
+    int i=0,j=0,k=0;
 
     while(i<n && j<m){
         if(x1[i].expo>x2[j].expo){
@@ -63,11 +56,26 @@ int main(){
         k++;
         j++;
     }
-
-    //printing x3
-    printf("the elements of x3 are\n");
-    for(i=0;i<k;i++){
-        printf("%dx^%d + ", x3[i].coeff, x3[i].expo) ;
+    return k;
+}
+void display(struct polynomial poly[], int terms)
+{
+    int i;
+    printf("\n");
+    for(i = 0; i < terms ; i++)
+    {
+        printf("%dX^%d+ ", poly[i].coeff, poly[i].expo);
     }
+}
+int main(){
+    int i,j,k,n,m;
+
+    printf("First function");
+    n=input(x1);
+    printf("Second function");
+    m = input(x2);
+    k=calculation(n,m);
+    printf("the resultant polynomial is ");
+    display(x3,k);
     return 0;
 }

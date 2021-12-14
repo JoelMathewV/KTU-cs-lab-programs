@@ -35,6 +35,8 @@ void convert(int n, int m){
     }
     b[0][2] = k-1;
 }
+
+//transpose not working still under development
 void transposeMatrix(int n){
     int i;
     for(i=0;i<k;i++){

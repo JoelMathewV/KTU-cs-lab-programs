@@ -17,7 +17,7 @@ class Shapes{
        b = side;
    }
    }
-   class ConstOverloading{
+   class ConstructorOverloading{
    public static void main(String[] args) {
        Shapes circle = new Shapes(3.56);
        Shapes square = new Shapes(5);

@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 class Palindrom{
     public static void main(String[] args) {
@@ -16,5 +15,6 @@ class Palindrom{
         else{
             System.out.println("it is a palindrom");
         }
+        sc.close();
     }
 }

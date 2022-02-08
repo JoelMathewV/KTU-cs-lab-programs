@@ -69,7 +69,6 @@ void display(struct polynomial poly[], int terms)
 }
 int main(){
     int i,j,k,n,m;
-
     printf("First function");
     n=input(x1);
     printf("Second function");

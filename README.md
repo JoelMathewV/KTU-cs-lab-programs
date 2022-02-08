@@ -1,5 +1,5 @@
-# College-C-programming-works
-This is the repo for sharing all the C programming related works being done in College of Engineering Karunagappally.
+# College-programming
+This is the repo for sharing all the College related programming works being done in College of Engineering Karunagappally.
 
 # Important points to note
 1. Try doing the programs yourself first and then refer the codes

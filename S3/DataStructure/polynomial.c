@@ -74,6 +74,10 @@ int main(){
     printf("Second function");
     m = input(x2);
     k=calculation(n,m);
+    printf("the 1st polynomial is ");
+    display(x1, n);
+    printf("\nthe 2nd polynomial is ");
+    display(x2, m);
     printf("the resultant polynomial is ");
     display(x3,k);
     return 0;

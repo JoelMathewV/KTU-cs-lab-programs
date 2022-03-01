@@ -36,13 +36,12 @@ void convert(int n, int m){
     b[0][2] = k-1;
 }
 
-//transpose not working still under development
 void transposeMatrix(int n){
     int i;
     for(i=0;i<k;i++){
-            b[i][0] = t[i][1];
-            b[i][1] = t[i][0];
-            b[i][2] = t[i][2];
+            t[i][0] = b[i][1];
+            t[i][1] = b[i][0];
+            t[i][2] = b[i][2];
     }
 }
 int main(){

@@ -49,8 +49,6 @@ char pop()
     }
     return 0;
 }
-// method that converts String from infix to prefix
-// all the strings are assumed to be valid expressions
 
 void infix_to_prefix()
 {

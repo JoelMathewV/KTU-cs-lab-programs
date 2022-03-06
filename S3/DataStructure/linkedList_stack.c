@@ -4,6 +4,7 @@ struct node{
     int data;
     struct node *link;
 };
+struct node *header;
 void push(){
     int data;
     struct node *temp;
@@ -43,7 +44,6 @@ void display(){
         }   
     } 
 }
-struct node *header;
 int main(){
     int op;
     char ch;

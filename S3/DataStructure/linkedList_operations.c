@@ -19,7 +19,6 @@ void display(){
         }
         
     }
-
 }
 void insertAtBeg(){
     int data;

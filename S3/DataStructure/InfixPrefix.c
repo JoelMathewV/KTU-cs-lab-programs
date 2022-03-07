@@ -31,7 +31,6 @@ void push(int pos)
     }
 }
 
-// method that removes character from stack and returns them
 char pop()
 {
     char ch;
@@ -49,6 +48,7 @@ char pop()
     }
     return 0;
 }
+
 
 void infix_to_prefix()
 {
@@ -70,31 +70,11 @@ void infix_to_prefix()
             i++;
         }
         // if an opening bracket is found, then
-        else if (infix[i] == '(' || infix[i] == '{' || infix[i] == '[') /* when closing bracket is found */
+        else if (infix[i] == '(')
         {
             if (infix[i] == '(')
             {
                 while (stack[top] != ')') /* pop till opening bracket is found */
-                {
-                    prefix[j] = pop();
-                    j++;
-                }
-                pop();
-                i++;
-            }
-            else if (infix[i] == '[')
-            {
-                while (stack[top] != ']') /* pop till corresponding opening bracket is found */
-                {
-                    prefix[j] = pop();
-                    j++;
-                }
-                pop();
-                i++;
-            }
-            else if (infix[i] == '{')
-            {
-                while (stack[top] != '}') /*pop till corresponding opening bracket is found*/
                 {
                     prefix[j] = pop();
                     j++;

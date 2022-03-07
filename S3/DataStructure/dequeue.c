@@ -47,6 +47,16 @@ int deletefront()
     }
     else
     {
+        item = dq[front];
+        if (front == rear)
+        {
+            front = -1;
+            rear = -1;
+        }
+        else if (front == LENGTH-1)
+            front = 0;
+        else
+            front = front + 1;
     }
     return (item);
 }

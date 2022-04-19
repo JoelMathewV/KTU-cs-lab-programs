@@ -7,7 +7,7 @@ struct node{
 };
 struct node* header = NULL;
 void display(){
-    struct node*temp;
+    struct node* temp;
     if(header==NULL)
         printf("Empty");
     else{

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Main {
+class Binarysearch {
     int binarySearch(int array[], int element, int low, int high) {
         while (low <= high) {
             int mid = low + (high - low) / 2;
@@ -14,7 +14,7 @@ class Main {
     }
 
     public static void main(String args[]) {
-        Main obj = new Main();
+        Binarysearch obj = new Binarysearch();
         int[] array = { 3, 4, 5, 6, 7, 8, 9 };
         int n = array.length;
 

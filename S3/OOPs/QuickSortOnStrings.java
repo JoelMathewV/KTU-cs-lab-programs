@@ -1,3 +1,5 @@
+import java.io.*;
+import java.util.*;
 public class QuickSortOnStrings {
     String names[];
     int length;

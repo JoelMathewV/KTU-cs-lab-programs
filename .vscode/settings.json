@@ -5,6 +5,7 @@
         "__string": "c",
         "string": "c",
         "string_view": "c",
-        "algorithm": "c"
+        "algorithm": "c",
+        "ECEC.C": "cpp"
     }
 }

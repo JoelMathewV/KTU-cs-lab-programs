@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <string.h>
 void main(){
-	char opcode[10],mnemonic[3],operand[10],label[10],code[10];
+	char opcode[10],operand[10],label[10],code[10];
 	int locctr,start,length;
 	FILE *fp1,*fp2,*fp3,*fp4;
 	fp1=fopen("input.dat","r");

@@ -3,8 +3,8 @@ struct process
 {
     int wt;
     int bt;
-    int pct;
-    int cbt;
+    int pct; //previous currrent time
+    int cbt; //copy of burst time
 };
 int main()
 {

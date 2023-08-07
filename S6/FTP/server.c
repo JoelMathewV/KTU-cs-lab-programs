@@ -81,10 +81,7 @@ int main()
   
   // receive file name
         clearBuf(net_buf);
-  
-        nBytes = recvfrom(sockfd, net_buf,
-                          NET_BUF_SIZE, sendrecvflag,
-                          (struct sockaddr*)&addr_con, &addrlen);
+        nBytes = recvfrom(sockfd, net_buf, NET_BUF_SIZE, sendrecvflag, (struct sockaddr*)&addr_con, &addrlen);
   
         fp = fopen(net_buf, "r");
         printf("\nFile Name Received: %s\n", net_buf);
@@ -97,16 +94,12 @@ int main()
   
             // process
             if (sendFile(fp, net_buf, NET_BUF_SIZE)) {
-                sendto(sockfd, net_buf, NET_BUF_SIZE,
-                       sendrecvflag, 
-                    (struct sockaddr*)&addr_con, addrlen);
+                sendto(sockfd, net_buf, NET_BUF_SIZE, sendrecvflag, (struct sockaddr*)&addr_con, addrlen);
                 break;
             }
   
             // send
-            sendto(sockfd, net_buf, NET_BUF_SIZE,
-                   sendrecvflag,
-                (struct sockaddr*)&addr_con, addrlen);
+            sendto(sockfd, net_buf, NET_BUF_SIZE, sendrecvflag, (struct sockaddr*)&addr_con, addrlen);
             clearBuf(net_buf);
         }
         if (fp != NULL)

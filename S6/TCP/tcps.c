@@ -34,6 +34,7 @@ int main()
     if (k == -1)
         printf("Error in receiving");
     printf("Message got from client is : %s", buf);
-    close(temp_sock_desc);
+    // close(temp_sock_desc);
+    // close(sock_desc);
     return 0;
 }

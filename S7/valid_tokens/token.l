@@ -8,7 +8,6 @@ int|float|for|if|else|while {printf("keyword");}
 int main(){
     printf("enter ip");
     yylex();
-    // printf("consonent: %d", v);
     }
 int yywrap(){
     return 1;

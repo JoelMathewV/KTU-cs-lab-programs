@@ -9,8 +9,8 @@ int flag=0;
 %left '*' '/' '%'
 %left '(' ')'
 /* Rule Section */
-%% 
 
+%% 
 ArithmeticExpression: E{ 
 		printf("\nResult=%d\n", $$); 
 		return 0; 
